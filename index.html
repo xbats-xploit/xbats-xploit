@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XbatsStore12</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" onclick="showPage('home')">Beranda</a>
+        <a href="#" onclick="showPage('contact')">Hubungi Kami</a>
+    </div>
+
+    <div id="home" class="container">
+        <h1>JUAL ALL KEBUTUHAN HOSTING🔥</h1>
+        <div class="diamond-info">
+            <img src="https://telegra.ph/file/3e1cfd61db16605336afa.jpg" alt="Diamond" />
+            <p>Diamond berkualitas tinggi untuk game favorit Anda. Dapatkan diamond Anda dengan harga terbaik di sini!</p>
+        </div>
+
+        <h2>All Hosting</h2>
+        <div class="product-card">
+            <img src="https://telegra.ph/file/dc262f60313dd3040ad4a.jpg" alt="Panel Pterodactyl">
+            <h2>Panel Pterodactyl</h2>
+            1gb-unli
+            <div class="price">Rp1k-12k</div>
+            <button class="button" onclick="buyPanelPterodactyl(1gb-unli)">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://telegra.ph/file/a81303a109695368621be.jpg" alt="Diamond Medium">
+            <h2>Vps DigitalOcean</h2>
+            <div class="price">20k-250k</div>
+            <button class="button" onclick="buyvps(ram3-ram14)">Buy</button>
+        </div>
+
+        <div class="product-card">
+            <img src="diamond-large.jpg" alt="Diamond Large">
+            <h2>1000 Diamond</h2>
+            <div class="price">Rp8.500.000</div>
+            <button class="button" onclick="buyDiamond(1000, 8500000)">Buy</button>
+        </div>
+    </div>
+
+    <div id="contact" class="container hidden">
+        <h1>Hubungi Kami</h1>
+        <form id="contactForm">
+            <label for="contactName">Nama:</label>
+            <input type="text" id="contactName" placeholder="Masukkan Nama" required>
+
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" placeholder="Masukkan Email" required>
+
+            <label for="messageContent">Pesan:</label>
+            <textarea id="messageContent" rows="4" placeholder="Masukkan Pesan" required></textarea>
+
+            <button type="submit" class="button">Kirim Pesan</button>
+            <div id="contactMessage" class="message"></div>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
